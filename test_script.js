@@ -30,7 +30,7 @@ client.connect((err) => {
 const finalresult = function(result, name){
   console.log("Found " + result.rowCount+ " person(s) by the name : " + name);
   result.rows.forEach((user,i) => {
-      console.log(`- ${user.id} : ${user.first_name},${user.last_name}, born '${user.birthdate.toISOString().slice(0,10)}'`);
+      // console.log(`- ${user.id} : ${user.first_name},${user.last_name}, born '${user.birthdate.toISOString().slice(0,10)}'`);
 
    })
 }
